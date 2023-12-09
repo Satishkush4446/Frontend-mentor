@@ -1,4 +1,4 @@
-# Product Card Design
+# QR code component
 
 - [x] Card section layout have completed and responsive as well in all devices
   - [x] Include Barcode Image
