@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: lightgrey;
+    padding: 100px;
+    font-family: 'Outfit', sans-serif;
+}
+#main{
+    background-color:hsl(212, 45%, 89%);
+    padding: 100px;
+    margin:auto; 
+}
