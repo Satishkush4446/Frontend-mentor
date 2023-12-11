@@ -7,7 +7,7 @@
 
 ## preview of live page
 you can see my web page below :
-- [Product Card Design](https://satishkush4446.github.io/Frontend-mentor/)
+- [Product Card Design](https://satishkush4446.github.io/Frontend-mentor/qr-code-component-main)
 
 ***Please suggest me any improvement or any change.***
 
