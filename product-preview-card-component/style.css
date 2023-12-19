@@ -2,21 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-body {
+  }
+  
+  body {
     background-color: hsl(30, 38%, 92%);
-
-}
-
-.row {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .row {
     max-width: 1440px;
     margin: auto;
     padding: 5% 0%;
-}
-
-#card-body {
+    display: flex;
+  }
+  
+  #card-body {
     max-width: 800px;
     height: auto;
     margin: auto;
@@ -24,19 +24,127 @@ body {
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     overflow: hidden;
-
-}
-
-.left,
-.right {
+  }
+  
+  .left,
+  .right {
     width: 50%;
-}
-
-.left img {
-    width: 400px;
-    height:100%;
-
-}
-#card-body .right{
+  }
+  
+  .left img {
+    width: 100%;
+    max-height: 100%; /* Set a maximum height to maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is contained within its container */
+  }
+  
+  #card-body .right {
     padding: 40px;
-}
+  }
+  
+  .right p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+  }
+  
+  .right h1 {
+    margin: 40px 0;
+    font-family: 'Fraunces', serif;
+  }
+  
+  #prices {
+    margin: 20px 0;
+  }
+  
+  #prices span {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #prices .cross {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+  .btn {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    margin: 40px 0;
+    border: 0;
+    position: relative;
+  }
+  
+  .btn svg {
+    position: absolute;
+    left: 30%;
+    bottom: 5px;
+    font-size: 15px;
+  }
+  
+  .btn a {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media screen and (max-width: 375px) {
+    .left,
+    .right {
+      width: 100%;
+    }
+  
+    .left img {
+      height: 350px; /* Set a specific height for the image on mobile devices */
+      object-fit: cover; /* Adjust object-fit property for mobile view */
+    }
+    #card-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        padding: 20px 15px;
+    }
+    #card-body .right {
+        padding: 20px;
+    }
+    .right h1{
+        margin: 20px 0px;
+    }
+    .btn{
+        margin: 20px 0px;
+    }
+  }
+  
+  @media screen and (min-width: 376px) and (max-width: 786px) {
+    .row {
+      flex-direction: column;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+    }
+  
+    .left img {
+      order: -1;
+      height: 200px; /* Set a specific height for the image on tablet devices */
+      object-fit: cover;
+    }
+  
+    #card-body .right {
+      padding: 20px;
+    }
+  }
+  
